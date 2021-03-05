@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: test-config
+data:
+  spin_clouddriver_baseUrl: "http://spin-clouddriver-rw:7002"
+  spin_deck_baseUrl: "http://spin-deck:9000"
+  spin_echo_baseUrl: "http://spin-echo:8089"
+  spin_echo_enabled: "false"
+  spin_fiat_baseUrl: "http://spin-fiat:7003"
+  spin_front50_baseUrl: "http://spin-front50:8080"
+  spin_gate_baseUrl: "http://spin-gate:8084"
+  spin_igor_baseUrl: "http://spin-igor:8088"
+  spin_orca_baseUrl: "http://spin-orca:8083"
+  spin_redis_baseUrl: "redis://spin-redis-svc:6379"
+  spin_rosco_baseUrl: "http://spin-rosco:8087"
+  services.fiat.cache.expiresAfterWriteSeconds: "0"
